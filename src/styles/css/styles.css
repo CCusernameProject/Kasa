@@ -1,0 +1,45 @@
+.header {
+  width: calc(100% - 200px);
+  height: 68px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+}
+.header ul .li {
+  width: 136px;
+  height: 34px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 24px;
+}
+.header ul .li--text1 {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+  height: 28px;
+}
+.header ul .li--text1:before {
+  content: "Accueil";
+}
+.header ul .li--text2 {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  height: 28px;
+}
+.header ul .li--text2:before {
+  content: "A Propos";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}/*# sourceMappingURL=styles.css.map */
