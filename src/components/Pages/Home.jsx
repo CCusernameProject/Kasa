@@ -1,9 +1,12 @@
 import HeaderComponent from '../Header/HeaderComponent';
-import '../../styles/css/styles.css'
+import MainComponent from '../Main/HomeMain/MainComponent';
 
 const Accueil = () => {
     return (
-        <HeaderComponent />
+        <>
+            <HeaderComponent />
+            <MainComponent />
+        </>
     )
 }
 
