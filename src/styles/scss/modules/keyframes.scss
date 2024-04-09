@@ -1,0 +1,11 @@
+@keyframes ArrowUpMoove {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes ArrowDownMoove {
+    to {
+        transform: rotate(360deg);
+    }
+}

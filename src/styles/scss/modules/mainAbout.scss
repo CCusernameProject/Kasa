@@ -1,0 +1,114 @@
+.MainAbout {
+    width: calc(100% - 200px);
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: $tablette-size) {
+        width: calc(100% - 30px);
+    }
+
+    &--CardTitle {
+        position: relative;
+        border: 1px solid black;
+        width: 100%;
+        height: 223px;
+        border-radius: 25px;
+        background-image: url('/images/kalen-emsleybg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        @media screen and (max-width: $tablette-size) {
+            width: 100%;
+            max-width: 335px;
+            height: 111px;
+            border-radius: 10px;
+            margin-left: 1.5px;
+        }
+
+        .BoxShadowCard {
+            width: 100%;
+            height: 223px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: $tablette-size) {
+                width: 100%;
+                max-width: 335px;
+                height: 111px;
+                justify-content: start;
+                border-radius: 10px;
+            }
+
+            &--text {
+                text-shadow: 3px 3px rgba(0, 0, 0, 0.6), 1px 1px black, 1px 1px black;
+                font-size: 48px;
+                font-weight: 700;
+                color: white;
+                @media screen and (max-width: $tablette-size) {
+                    width: 220px;
+                    font-size: 24px;
+                    margin-left: 15px;
+                }
+            } 
+        }
+    }
+
+    &--AboutDisplay {
+        width: 100%;
+        max-width: 1023px;
+        height: 100%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .BoxComponent {
+            width: 100%;
+            max-width: 1023px;
+            height: 100%;
+            
+            &--text-Icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: calc(100% - 38px);
+                max-width: 1018px;
+                height: 34px;
+                padding: 10px 20px 10px 15px;
+                background-color: #FF6060;
+                border-radius: 5px;
+
+                .text {
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            &--description {
+                width: calc(100% - 40px);
+                padding: 10px 20px 10px 15px;
+                max-width: 1018px;
+                height: 100%;
+                margin: auto;
+                font-size: 18px;
+                background-color: rgb(245, 245, 245);
+            }
+
+            .ArrowDown:hover {
+                cursor: pointer;
+            }
+
+            .ArrowUp {
+                animation: ArrowUpMoove .3s ease-in-out forwards;
+            }
+
+        }
+    }
+}

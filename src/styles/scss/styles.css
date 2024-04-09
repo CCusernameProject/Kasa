@@ -1,3 +1,13 @@
+@keyframes ArrowUpMoove {
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes ArrowDownMoove {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .header {
   width: calc(100% - 200px);
   height: 68px;
@@ -48,7 +58,6 @@
 .header ul .li--text1 {
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid black;
   height: 28px;
 }
 @media screen and (max-width: 768px) {
@@ -65,10 +74,15 @@
     content: "ACCUEIL";
   }
 }
+.header ul .li .blackBorder {
+  border-bottom: 2px solid black;
+}
+.header ul .li .invisibleBorder {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
 .header ul .li--text2 {
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
   height: 28px;
 }
 @media screen and (max-width: 768px) {
@@ -250,6 +264,118 @@
   }
 }
 
+.MainAbout {
+  width: calc(100% - 200px);
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .MainAbout {
+    width: calc(100% - 30px);
+  }
+}
+.MainAbout--CardTitle {
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  background-image: url("/images/kalen-emsleybg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+  .MainAbout--CardTitle {
+    width: 100%;
+    max-width: 335px;
+    height: 111px;
+    border-radius: 10px;
+    margin-left: 1.5px;
+  }
+}
+.MainAbout--CardTitle .BoxShadowCard {
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .MainAbout--CardTitle .BoxShadowCard {
+    width: 100%;
+    max-width: 335px;
+    height: 111px;
+    justify-content: start;
+    border-radius: 10px;
+  }
+}
+.MainAbout--CardTitle .BoxShadowCard--text {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.6), 1px 1px black, 1px 1px black;
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .MainAbout--CardTitle .BoxShadowCard--text {
+    width: 220px;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+}
+.MainAbout--AboutDisplay {
+  width: 100%;
+  max-width: 1023px;
+  height: 100%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.MainAbout--AboutDisplay .BoxComponent {
+  width: 100%;
+  max-width: 1023px;
+  height: 100%;
+}
+.MainAbout--AboutDisplay .BoxComponent--text-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 38px);
+  max-width: 1018px;
+  height: 34px;
+  padding: 10px 20px 10px 15px;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+.MainAbout--AboutDisplay .BoxComponent--text-Icon .text {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.MainAbout--AboutDisplay .BoxComponent--description {
+  width: calc(100% - 40px);
+  padding: 10px 20px 10px 15px;
+  max-width: 1018px;
+  height: 100%;
+  margin: auto;
+  font-size: 18px;
+  background-color: rgb(245, 245, 245);
+}
+.MainAbout--AboutDisplay .BoxComponent .ArrowDown:hover {
+  cursor: pointer;
+}
+.MainAbout--AboutDisplay .BoxComponent .ArrowUp {
+  animation: ArrowUpMoove 0.3s ease-in-out forwards;
+}
+
 .Footer {
   position: relative;
   margin-top: 60px;
@@ -280,4 +406,10 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+}
+
+.ArrowDown {
+  width: 40px;
+  fill: white;
+  animation: ArrowDownMoove 0.2s ease-in-out forwards;
 }/*# sourceMappingURL=styles.css.map */
