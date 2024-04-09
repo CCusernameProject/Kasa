@@ -1,15 +1,15 @@
 import LogementsDiplay from './LogementsDisplay'
 import CardTitle from './CardTitle'
 
-const MainComponent = () => {
+const MainHomeComponent = () => {
     return (
-        <main className='Main'>
+        <main className='MainHome'>
             <CardTitle />
-            <div className='Main--BoxLogements'>
+            <div className='MainHome--BoxLogements'>
                 <LogementsDiplay />
             </div>
         </main>
     )
 }
 
-export default MainComponent
+export default MainHomeComponent

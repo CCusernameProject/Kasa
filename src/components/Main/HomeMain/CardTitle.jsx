@@ -1,6 +1,6 @@
 const CardTitle = () => {
     return (
-        <div className="Main--CardTitle">
+        <div className="MainHome--CardTitle">
             <div className="BoxShadowCard">
                 <p className="BoxShadowCard--text">Chez vous, partout et ailleurs</p>
             </div>

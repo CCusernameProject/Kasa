@@ -1,11 +1,13 @@
 import HeaderComponent from '../Header/HeaderComponent';
-import MainComponent from '../Main/HomeMain/MainComponent';
+import MainHomeComponent from '../Main/HomeMain/MainComponent';
+import FooterComponent from '../Footer/FooterComponent'
 
 const Accueil = () => {
     return (
         <>
             <HeaderComponent />
-            <MainComponent />
+            <MainHomeComponent />
+            <FooterComponent />
         </>
     )
 }

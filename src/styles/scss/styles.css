@@ -86,7 +86,7 @@
   }
 }
 
-.Main {
+.MainHome {
   width: calc(100% - 200px);
   margin: auto;
   margin-top: 30px;
@@ -96,11 +96,11 @@
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .Main {
+  .MainHome {
     width: calc(100% - 30px);
   }
 }
-.Main--CardTitle {
+.MainHome--CardTitle {
   position: relative;
   border: 1px solid black;
   width: 100%;
@@ -112,7 +112,7 @@
   background-position: 50% 50%;
 }
 @media screen and (max-width: 768px) {
-  .Main--CardTitle {
+  .MainHome--CardTitle {
     width: 100%;
     max-width: 335px;
     height: 111px;
@@ -120,7 +120,7 @@
     margin-left: 1.5px;
   }
 }
-.Main--CardTitle .BoxShadowCard {
+.MainHome--CardTitle .BoxShadowCard {
   width: 100%;
   height: 223px;
   border-radius: 25px;
@@ -130,7 +130,7 @@
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .Main--CardTitle .BoxShadowCard {
+  .MainHome--CardTitle .BoxShadowCard {
     width: 100%;
     max-width: 335px;
     height: 111px;
@@ -138,20 +138,20 @@
     border-radius: 10px;
   }
 }
-.Main--CardTitle .BoxShadowCard--text {
+.MainHome--CardTitle .BoxShadowCard--text {
   text-shadow: 3px 3px rgba(0, 0, 0, 0.6), 1px 1px black, 1px 1px black;
   font-size: 48px;
   font-weight: 700;
   color: white;
 }
 @media screen and (max-width: 768px) {
-  .Main--CardTitle .BoxShadowCard--text {
+  .MainHome--CardTitle .BoxShadowCard--text {
     width: 220px;
     font-size: 24px;
     margin-left: 15px;
   }
 }
-.Main--BoxLogements {
+.MainHome--BoxLogements {
   margin-top: 40px;
   width: calc(100% - 60px);
   background-color: #F6F6F6;
@@ -162,7 +162,7 @@
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements {
+  .MainHome--BoxLogements {
     background-color: rgba(0, 0, 0, 0);
     padding: 0;
     width: 100%;
@@ -170,7 +170,7 @@
     margin-top: 10px;
   }
 }
-.Main--BoxLogements .containerBox {
+.MainHome--BoxLogements .containerBox {
   width: 100%;
   max-width: 1240px;
   display: grid;
@@ -181,23 +181,23 @@
   box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements .containerBox {
+  .MainHome--BoxLogements .containerBox {
     display: block;
   }
 }
-.Main--BoxLogements .containerBox .ImageElement {
+.MainHome--BoxLogements .containerBox .ImageElement {
   position: relative;
   width: 100%;
   height: 340px;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements .containerBox .ImageElement {
+  .MainHome--BoxLogements .containerBox .ImageElement {
     max-width: 335px;
     height: 255px;
     margin-top: 20px;
   }
 }
-.Main--BoxLogements .containerBox .ImageElement--image {
+.MainHome--BoxLogements .containerBox .ImageElement--image {
   position: absolute;
   width: 100%;
   height: 340px;
@@ -206,15 +206,15 @@
      object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements .containerBox .ImageElement--image {
+  .MainHome--BoxLogements .containerBox .ImageElement--image {
     max-width: 335px;
     height: 255px;
   }
 }
-.Main--BoxLogements .containerBox .ImageElement:hover {
+.MainHome--BoxLogements .containerBox .ImageElement:hover {
   cursor: pointer;
 }
-.Main--BoxLogements .containerBox .ImageElement .BoxShadow {
+.MainHome--BoxLogements .containerBox .ImageElement .BoxShadow {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
   width: 100%;
   height: 340px;
@@ -224,12 +224,12 @@
   border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements .containerBox .ImageElement .BoxShadow {
+  .MainHome--BoxLogements .containerBox .ImageElement .BoxShadow {
     max-width: 335px;
     height: 255px;
   }
 }
-.Main--BoxLogements .containerBox .ImageElement .BoxShadow--text {
+.MainHome--BoxLogements .containerBox .ImageElement .BoxShadow--text {
   width: 100%;
   max-width: 300px;
   margin: auto;
@@ -238,15 +238,41 @@
   color: white;
   font-weight: 700;
 }
-.Main--BoxLogements .containerBox .ImageElement--link {
+.MainHome--BoxLogements .containerBox .ImageElement--link {
   position: absolute;
   width: 100%;
   height: 340px;
 }
 @media screen and (max-width: 768px) {
-  .Main--BoxLogements .containerBox .ImageElement--link {
+  .MainHome--BoxLogements .containerBox .ImageElement--link {
     max-width: 335px;
     height: 255px;
+  }
+}
+
+.Footer {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  height: 209px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Footer--text {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .Footer--text {
+    width: 133.59px;
+    height: 46px;
+    font-size: 12px;
+    text-align: center;
   }
 }
 
