@@ -9,7 +9,7 @@ const BoxComponent = (props) => {
             <div className="BoxComponent--text-Icon">
                 <span className="text">{props.title}</span>
                 <div onClick={() => setDescriptionVisible(!DescriptionVisible)}>
-                    <ArrowDown class={DescriptionVisible ? 'ArrowDown ArrowUp' : 'ArrowDown'}/>
+                    <ArrowDown class={DescriptionVisible ? 'ArrowDown ArrowUp' : 'ArrowDown ArrowDownBack'}/>
                 </div>
             </div>
             {DescriptionVisible && <DescriptionText id={props.id} description={props.description} /> }

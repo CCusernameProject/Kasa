@@ -1,0 +1,48 @@
+.mainErrorPage {
+    color: #FF6060;
+    width: calc(100% - 200px);
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: $tablette-size) {
+        width: calc(100% - 30px);
+    }
+    @media screen and (max-width: ($computer-size - 1px)) {
+        text-align: center;
+    }
+
+    &--number {
+        font-size: 288px;
+        @media screen and (max-width: ($computer-size - 1px)) {
+            font-size: 96px;
+        }
+    }
+    
+    &--description {
+        font-size: 36px;
+
+        &:before {
+            content: "Oups! La page que vous demandez n'existe pas.";
+        }
+        @media screen and (max-width: ($computer-size - 1px)) {
+            width: 260px;
+            font-size: 18px;
+
+            &:before {
+                content: "Oups! La page que \A vous demandez n'existe pas.";
+                white-space: pre;
+            }
+        }
+    }
+    
+    &--redirection {
+        color: black;
+        font-size: 18px;
+        @media screen and (max-width: ($computer-size - 1px)) {
+            font-size: 14px;
+        }
+    }
+}

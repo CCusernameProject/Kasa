@@ -3,6 +3,7 @@
 @import './modules/header.scss';
 @import './modules/mainHome.scss';
 @import './modules/mainAbout.scss';
+@import './modules/mainErrorPage.scss';
 @import './modules/footer.scss';
 
 * {
@@ -14,5 +15,4 @@
 .ArrowDown {
     width: 40px;
     fill: white;
-    animation: ArrowDownMoove .2s ease-in-out forwards;
 }

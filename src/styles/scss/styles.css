@@ -375,6 +375,63 @@
 .MainAbout--AboutDisplay .BoxComponent .ArrowUp {
   animation: ArrowUpMoove 0.3s ease-in-out forwards;
 }
+.MainAbout--AboutDisplay .BoxComponent .ArrowDownBack {
+  animation: ArrowDownMoove 0.3s ease-in-out forwards;
+}
+
+.mainErrorPage {
+  color: #FF6060;
+  width: calc(100% - 200px);
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .mainErrorPage {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 1439px) {
+  .mainErrorPage {
+    text-align: center;
+  }
+}
+.mainErrorPage--number {
+  font-size: 288px;
+}
+@media screen and (max-width: 1439px) {
+  .mainErrorPage--number {
+    font-size: 96px;
+  }
+}
+.mainErrorPage--description {
+  font-size: 36px;
+}
+.mainErrorPage--description:before {
+  content: "Oups! La page que vous demandez n'existe pas.";
+}
+@media screen and (max-width: 1439px) {
+  .mainErrorPage--description {
+    width: 260px;
+    font-size: 18px;
+  }
+  .mainErrorPage--description:before {
+    content: "Oups! La page que \avous demandez n'existe pas.";
+    white-space: pre;
+  }
+}
+.mainErrorPage--redirection {
+  color: black;
+  font-size: 18px;
+}
+@media screen and (max-width: 1439px) {
+  .mainErrorPage--redirection {
+    font-size: 14px;
+  }
+}
 
 .Footer {
   position: relative;
@@ -411,5 +468,4 @@
 .ArrowDown {
   width: 40px;
   fill: white;
-  animation: ArrowDownMoove 0.2s ease-in-out forwards;
 }/*# sourceMappingURL=styles.css.map */

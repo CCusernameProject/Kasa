@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Route, Link } from "react-router-d
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Accommodation from './components/Pages/Accommodation';
+import ErrorPage from './components/Pages/ErrorPage'
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     {
         path: '/about',
         element: <About />
+    },
+    {
+        path: '*',
+        element: <ErrorPage />
     },
     {
         path: `/logement/:id`,
