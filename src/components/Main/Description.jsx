@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-
-const Arrow = document.getElementById('ArrowDown');
 const DescriptionText = (props) => {
 
     return (

@@ -5,7 +5,7 @@
 }
 @keyframes ArrowDownMoove {
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 .header {
@@ -376,7 +376,7 @@
   animation: ArrowUpMoove 0.3s ease-in-out forwards;
 }
 .MainAbout--AboutDisplay .BoxComponent .ArrowDownBack {
-  animation: ArrowDownMoove 0.3s ease-in-out forwards;
+  animation: reverse ArrowDownMoove 0.3s ease-in-out forwards;
 }
 
 .mainErrorPage {
@@ -433,6 +433,299 @@
   }
 }
 
+.MainAccomodation {
+  margin-top: 50px;
+}
+.MainAccomodation--Component {
+  position: relative;
+  width: calc(100% - 200px);
+  margin: auto;
+  height: 415px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component {
+    width: calc(100% - 30px);
+    height: 255px;
+  }
+}
+.MainAccomodation--Component--Carousel {
+  position: absolute;
+  width: 100%;
+  height: 415px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Carousel {
+    height: 255px;
+  }
+}
+.MainAccomodation--Component--Carousel .img {
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Carousel .img {
+    height: 255px;
+  }
+}
+.MainAccomodation--Component--Arrow {
+  position: absolute;
+  width: 100%;
+  height: 415px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Arrow {
+    height: 255px;
+  }
+}
+.MainAccomodation--Component--Arrow .Arrow:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Arrow .Arrow {
+    width: 20px;
+    height: 30px;
+  }
+}
+.MainAccomodation--Component--Arrow .Arrow--Left {
+  transform: rotate(90deg);
+}
+.MainAccomodation--Component--Arrow .Arrow--Right {
+  transform: rotate(270deg);
+}
+.MainAccomodation--Component--Number {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Number {
+    height: 35px;
+  }
+}
+.MainAccomodation--Component--Number .text {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--Number .text {
+    font-size: 18px;
+  }
+}
+.MainAccomodation--Component--About {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.MainAccomodation--Component--About .TitleOrLocation {
+  width: 76%;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .TitleOrLocation {
+    width: 100%;
+    order: 1;
+  }
+}
+.MainAccomodation--Component--About .TitleOrLocation--Title {
+  height: 51px;
+  color: #FF6060;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .TitleOrLocation--Title {
+    height: 46px;
+    font-size: 18px;
+  }
+}
+.MainAccomodation--Component--About .TitleOrLocation--Location {
+  height: 26px;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .TitleOrLocation--Location {
+    font-size: 14px;
+  }
+}
+.MainAccomodation--Component--About .NameOrPicture {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 77px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .NameOrPicture {
+    height: 32px;
+    margin-top: 20px;
+    order: 4;
+  }
+}
+.MainAccomodation--Component--About .NameOrPicture--Name {
+  width: 93px;
+  height: 52px;
+  font-size: 18px;
+  color: #FF6060;
+  text-align: end;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .NameOrPicture--Name {
+    font-size: 12px;
+  }
+}
+.MainAccomodation--Component--About .NameOrPicture--Picture {
+  width: 64px;
+  height: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .NameOrPicture--Picture {
+    width: 32px;
+    height: 32px;
+  }
+}
+.MainAccomodation--Component--About .tags {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .tags {
+    width: 100%;
+    order: 2;
+  }
+}
+.MainAccomodation--Component--About .tags .text {
+  height: 20px;
+  padding: 5px 20px;
+  color: white;
+  background-color: #FF6060;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .tags .text {
+    font-size: clamp(6px, 100%, 10px);
+  }
+}
+.MainAccomodation--Component--About .Star {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .Star {
+    width: 76%;
+    order: 3;
+    justify-content: start;
+  }
+}
+.MainAccomodation--Component--About .About3 {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 {
+    order: 5;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+}
+.MainAccomodation--Component--About .About3--Button {
+  width: 100%;
+  max-width: 582px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3--Button {
+    max-width: 100%;
+  }
+}
+.MainAccomodation--Component--About .About3 .BoxComponent {
+  width: 100%;
+  max-width: 1023px;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 .BoxComponent {
+    max-width: 100%;
+  }
+}
+.MainAccomodation--Component--About .About3 .BoxComponent--text-Icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 30px);
+  max-width: 582px;
+  height: 32px;
+  padding: 10px 20px 10px 10px;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 .BoxComponent--text-Icon {
+    max-width: 100%;
+  }
+}
+.MainAccomodation--Component--About .About3 .BoxComponent--text-Icon .text {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.MainAccomodation--Component--About .About3 .BoxComponent--description {
+  width: calc(100% - 40px);
+  padding: 10px 20px 10px 15px;
+  max-width: 1018px;
+  height: 100%;
+  margin: auto;
+  font-size: 18px;
+  background-color: rgb(245, 245, 245);
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 .BoxComponent--description {
+    max-width: 100%;
+  }
+}
+.MainAccomodation--Component--About .About3 .BoxComponent .ArrowDown:hover {
+  cursor: pointer;
+}
+.MainAccomodation--Component--About .About3 .BoxComponent .ArrowUp {
+  animation: ArrowUpMoove 0.3s ease-in-out forwards;
+}
+.MainAccomodation--Component--About .About3 .BoxComponent .ArrowDownBack {
+  animation: reverse ArrowDownMoove 0.3s ease-in-out forwards;
+}
+
 .Footer {
   position: relative;
   margin-top: 60px;
@@ -463,9 +756,4 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-}
-
-.ArrowDown {
-  width: 40px;
-  fill: white;
 }/*# sourceMappingURL=styles.css.map */

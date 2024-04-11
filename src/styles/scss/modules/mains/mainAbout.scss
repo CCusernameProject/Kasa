@@ -110,7 +110,7 @@
             }
 
             .ArrowDownBack {
-                animation: ArrowDownMoove .3s ease-in-out forwards;
+                animation: reverse ArrowDownMoove .3s ease-in-out forwards;
             }
 
         }

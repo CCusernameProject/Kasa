@@ -1,18 +1,14 @@
 @import './modules/variables.scss';
 @import './modules/keyframes.scss';
 @import './modules/header.scss';
-@import './modules/mainHome.scss';
-@import './modules/mainAbout.scss';
-@import './modules/mainErrorPage.scss';
+@import './modules/mains/mainHome.scss';
+@import './modules/mains/mainAbout.scss';
+@import './modules/mains/mainErrorPage.scss';
+@import './modules/mains/mainAccomodation.scss';
 @import './modules/footer.scss';
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
-}
-
-.ArrowDown {
-    width: 40px;
-    fill: white;
 }

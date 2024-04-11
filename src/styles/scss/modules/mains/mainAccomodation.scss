@@ -1,0 +1,281 @@
+.MainAccomodation {
+    margin-top: 50px;
+    
+    &--Component {
+        position: relative;
+        width: calc(100% - 200px);
+        margin: auto;
+        height: 415px;
+        @media screen and (max-width: $tablette-size) {
+            width: calc(100% - 30px);
+            height: 255px;
+        }
+
+        &--Carousel {
+            position: absolute;
+            width: 100%;
+            height: 415px;
+            @media screen and (max-width: $tablette-size) {
+                height: 255px;
+            }
+
+            .img {
+                width: 100%;
+                height: 415px;
+                object-fit: cover;
+                overflow: hidden;
+                border-radius: 25px;
+                @media screen and (max-width: $tablette-size) {
+                    height: 255px;
+                }
+            }
+        }
+
+        &--Arrow {
+            position: absolute;
+            width: 100%;
+            height: 415px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: $tablette-size) {
+                height: 255px;
+            }
+
+            .Arrow {
+                &:hover {
+                    cursor: pointer;
+                }
+                @media screen and (max-width: $tablette-size) {
+                    width: 20px;
+                    height: 30px;
+                }
+
+                &--Left {
+                    transform: rotate(90deg);
+                }
+                
+                &--Right {
+                    transform: rotate(270deg);
+                }
+            }
+        }
+
+        &--Number {
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            @media screen and (max-width: $tablette-size) {
+                height: 35px;
+            }
+
+            .text {
+                font-size: 18px;
+                @media screen and (max-width: $tablette-size) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &--About {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+    
+            .TitleOrLocation {
+                width: 76%;
+                @media screen and (max-width: $tablette-size) {
+                    width: 100%;
+                    order: 1;
+                }
+
+                &--Title {
+                    height: 51px;
+                    color: #FF6060;
+                    font-size: 36px;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $tablette-size) {
+                        height: 46px;
+                        font-size: 18px;
+                    }
+                }
+                
+                &--Location {
+                    height: 26px;
+                    color: black;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $tablette-size) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .NameOrPicture {
+                width: 24%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                height: 77px;
+                @media screen and (max-width: $tablette-size) {
+                    height: 32px;
+                    margin-top: 20px;
+                    order: 4;
+                }
+
+                &--Name {
+                    width: 93px;
+                    height: 52px;
+                    font-size: 18px;
+                    color: #FF6060;
+                    text-align: end;
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $tablette-size) {
+                        font-size: 12px;
+                    }
+                }
+
+                &--Picture {
+                    width: 64px;
+                    height: 64px;
+                    object-fit: cover;
+                    border-radius: 50px;
+                    @media screen and (max-width: $tablette-size) {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+
+            .tags {
+                margin-top: 20px;
+                width: 50%;
+                display: flex;
+                gap: 10px;
+                @media screen and (max-width: $tablette-size) {
+                    width: 100%;
+                    order: 2;
+                }
+                
+                .text {
+                    height: 20px;
+                    padding: 5px 20px;
+                    color: white;
+                    background-color: #FF6060;
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and (max-width: $tablette-size) {
+                        font-size: clamp(6px, 100%, 10px);
+                    }
+                }
+            }
+            
+            .Star {
+                margin-top: 20px;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+                @media screen and (max-width: $tablette-size) {
+                    width: 76%;
+                    order: 3;
+                    justify-content: start;
+                }
+            }
+
+            .About3 {
+                width: 100%;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: $tablette-size) {
+                    order: 5;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 20px;
+                }
+
+                &--Button {
+                    width: 100%;
+                    max-width: 582px;
+                    @media screen and (max-width: $tablette-size) {
+                        max-width: 100%;
+                    }
+                }
+
+                .BoxComponent {
+                    width: 100%;
+                    max-width: 1023px;
+                    height: 100%;
+                    @media screen and (max-width: $tablette-size) {
+                        max-width: 100%;
+                    }
+                    
+
+                    &--text-Icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: calc(100% - 30px);
+                        max-width: 582px;
+                        height: 32px;
+                        padding: 10px 20px 10px 10px;
+                        background-color: #FF6060;
+                        border-radius: 5px;
+                        @media screen and (max-width: $tablette-size) {
+                            max-width: 100%;
+                        }
+        
+                        .text {
+                            color: white;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+        
+                    &--description {
+                        width: calc(100% - 40px);
+                        padding: 10px 20px 10px 15px;
+                        max-width: 1018px;
+                        height: 100%;
+                        margin: auto;
+                        font-size: 18px;
+                        background-color: rgb(245, 245, 245);
+                        @media screen and (max-width: $tablette-size) {
+                            max-width: 100%;
+                        }
+                    }
+        
+                    .ArrowDown:hover {
+                        cursor: pointer;
+                    }
+        
+                    .ArrowUp {
+                        animation: ArrowUpMoove .3s ease-in-out forwards;
+                    }
+        
+                    .ArrowDownBack {
+                        animation: reverse ArrowDownMoove .3s ease-in-out forwards;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
