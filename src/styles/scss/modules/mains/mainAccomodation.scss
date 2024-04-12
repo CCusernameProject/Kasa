@@ -1,5 +1,8 @@
 .MainAccomodation {
     margin-top: 50px;
+    @media screen and (max-width: $tablette-size) {
+        width: calc(100% - 30px);
+    }
     
     &--Component {
         position: relative;

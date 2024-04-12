@@ -8,6 +8,12 @@
     transform: rotate(180deg);
   }
 }
+@keyframes HeightUp {
+  to {
+    height: 100%;
+    padding: 10px 20px 10px 15px;
+  }
+}
 .header {
   width: calc(100% - 200px);
   height: 68px;
@@ -362,12 +368,17 @@
 }
 .MainAbout--AboutDisplay .BoxComponent--description {
   width: calc(100% - 40px);
-  padding: 10px 20px 10px 15px;
+  padding: 0px 20px 0px 15px;
   max-width: 1018px;
-  height: 100%;
+  height: 0;
   margin: auto;
   font-size: 18px;
   background-color: rgb(245, 245, 245);
+  position: relative;
+  overflow: hidden;
+}
+.MainAbout--AboutDisplay .BoxComponent .AddDescription {
+  animation: HeightUp 1s ease-in-out forwards;
 }
 .MainAbout--AboutDisplay .BoxComponent .ArrowDown:hover {
   cursor: pointer;
@@ -435,6 +446,11 @@
 
 .MainAccomodation {
   margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation {
+    width: calc(100% - 30px);
+  }
 }
 .MainAccomodation--Component {
   position: relative;

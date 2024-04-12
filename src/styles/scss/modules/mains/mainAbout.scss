@@ -91,15 +91,24 @@
                 }
             }
 
+            
             &--description {
                 width: calc(100% - 40px);
-                padding: 10px 20px 10px 15px;
+                padding: 0px 20px 0px 15px;
                 max-width: 1018px;
-                height: 100%;
+                height: 0;
                 margin: auto;
                 font-size: 18px;
                 background-color: rgb(245, 245, 245);
+                position: relative;
+                overflow: hidden;
+
             }
+            .AddDescription {
+                animation: HeightUp 1s ease-in-out forwards;
+            }
+
+
 
             .ArrowDown:hover {
                 cursor: pointer;
