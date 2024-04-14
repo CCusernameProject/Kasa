@@ -23,24 +23,34 @@ const CarouselComponent = (props) => {
         }
     }
     
-    return (
-        <div className='MainAccomodation--Component'>
-            <div className="MainAccomodation--Component--Carousel">
-                <img id='ImageCarousel' className='img' src={pictures[actualImage]}></img>
-            </div>
-            <div className='MainAccomodation--Component--Arrow' >
-                <div onClick={() => ClickedArrow("Left")}>
-                    <Arrow id="Arrow" class="Arrow Arrow--Left" fill="white" height="100px" width="100px" />
+    if(pictures.length !== 1) {
+        return (
+            <div className='MainAccomodation--Component'>
+                <div className="MainAccomodation--Component--Carousel">
+                    <img id='ImageCarousel' className='img' src={pictures[actualImage]}></img>
                 </div>
-                <div onClick={() => ClickedArrow("Right")}>
-                    <Arrow id="Arrow" class="Arrow Arrow--Right" fill="white" height="100px" width="100px" />
+                <div id='ArrowAndNumber' className='MainAccomodation--Component--Arrow' >
+                    <div onClick={() => ClickedArrow("Left")}>
+                        <Arrow id="Arrow" class="Arrow Arrow--Left" fill="white" height="100px" width="100px" />
+                    </div>
+                    <div onClick={() => ClickedArrow("Right")}>
+                        <Arrow id="Arrow" class="Arrow Arrow--Right" fill="white" height="100px" width="100px" />
+                    </div>
+                </div>
+                <div className='MainAccomodation--Component--Number'>
+                    <span id='Number' className='text'>{`${actualImage + 1} / ${pictures.length}`}</span>
                 </div>
             </div>
-            <div className='MainAccomodation--Component--Number'>
-                <span id='Number' className='text'>{`${actualImage + 1} / ${pictures.length}`}</span>
+        )
+    } else {
+        return (
+            <div className='MainAccomodation--Component'>
+                <div className="MainAccomodation--Component--Carousel">
+                    <img id='ImageCarousel' className='img' src={pictures[actualImage]}></img>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default CarouselComponent
