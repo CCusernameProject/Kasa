@@ -24,7 +24,7 @@ const ContentComponent = (props) => {
                 </div>
                 <div className="About3--Button">
                     <div className="title">
-                        <BoxComponent title="Equipements" description={props.element.equipments.map((equipement, index) => (<>{equipement}<br /></>))} />
+                        <BoxComponent title="Equipements" description={props.element.equipments} valeur={true}/>
                     </div>
                 </div>
             </div>
