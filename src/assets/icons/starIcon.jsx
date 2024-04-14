@@ -1,6 +1,6 @@
 const StarIcon = (props) => {
     return (
-        <svg version="1.1" fill={props.color} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width={props.width} height={props.height} viewBox="0 0 432 432" xmlSpace="preserve">
+        <svg version="1.1" fill={props.color} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" className="StarIcon" viewBox="0 0 432 432" xmlSpace="preserve">
         <path d="M429.69,166.246c-2.186-6.729-8.002-11.632-15.003-12.649l-125.773-18.274L232.667,21.352
             c-3.131-6.344-9.593-10.36-16.667-10.36s-13.535,4.017-16.666,10.36l-56.247,113.971L17.313,153.597
             c-7.001,1.018-12.817,5.921-15.003,12.649c-2.187,6.728-0.363,14.114,4.702,19.052l91.012,88.717L76.538,399.28

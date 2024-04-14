@@ -450,6 +450,8 @@
 @media screen and (max-width: 768px) {
   .MainAccomodation {
     width: calc(100% - 30px);
+    margin: auto;
+    margin-top: 50px;
   }
 }
 .MainAccomodation--Component {
@@ -460,7 +462,7 @@
 }
 @media screen and (max-width: 768px) {
   .MainAccomodation--Component {
-    width: calc(100% - 30px);
+    width: 100%;
     height: 255px;
   }
 }
@@ -543,6 +545,12 @@
   display: flex;
   flex-wrap: wrap;
   height: auto;
+  width: calc(100% - 200px);
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About {
+    width: 100%;
+  }
 }
 .MainAccomodation--Component--About .TitleOrLocation {
   width: 76%;
@@ -647,6 +655,12 @@
 @media screen and (max-width: 768px) {
   .MainAccomodation--Component--About .tags .text {
     font-size: clamp(6px, 100%, 10px);
+    padding: 5px 0px;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 .MainAccomodation--Component--About .Star {
@@ -662,6 +676,17 @@
     width: 76%;
     order: 3;
     justify-content: start;
+    gap: 5px;
+  }
+}
+.MainAccomodation--Component--About .Star .StarIcon {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .Star .StarIcon {
+    width: 13px;
+    height: 14px;
   }
 }
 .MainAccomodation--Component--About .About3 {
@@ -710,13 +735,19 @@
 }
 @media screen and (max-width: 768px) {
   .MainAccomodation--Component--About .About3 .BoxComponent--text-Icon {
-    max-width: 100%;
+    width: calc(100% - 15px);
+    padding: 10px 5px 10px 10px;
   }
 }
 .MainAccomodation--Component--About .About3 .BoxComponent--text-Icon .text {
   color: white;
   font-size: 24px;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 .BoxComponent--text-Icon .text {
+    font-size: 13px;
+  }
 }
 .MainAccomodation--Component--About .About3 .BoxComponent--description {
   width: calc(100% - 40px);
@@ -730,6 +761,13 @@
 @media screen and (max-width: 768px) {
   .MainAccomodation--Component--About .About3 .BoxComponent--description {
     max-width: 100%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .MainAccomodation--Component--About .About3 .BoxComponent .ArrowDown {
+    width: 16px;
+    height: 9.14px;
   }
 }
 .MainAccomodation--Component--About .About3 .BoxComponent .ArrowDown:hover {
